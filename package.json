@@ -14,7 +14,7 @@
     "build:firefox": "plasmo build --target=firefox-mv3",
     "build": "npm run build:chrome && npm run build:firefox",
     "test": "plasmo test",
-    "eslint": "eslint '**/*.ts?(x)'",
+    "eslint": "eslint **/*.ts?(x)",
     "stylelint": "stylelint \"**/*.{css,scss}\""
   },
   "dependencies": {
