@@ -1,5 +1,6 @@
 import type { PlasmoCSConfig } from "plasmo";
 import { getLMSinLMSPage } from "./util/getLMS";
+import { customizeTimetable } from "./util/timetable";
 
 export const config: PlasmoCSConfig = {
   matches: ["https://scombz.shibaura-it.ac.jp/lms/timetable*"],
@@ -8,4 +9,5 @@ export const config: PlasmoCSConfig = {
 
 document.addEventListener("DOMContentLoaded", async () => {
   getLMSinLMSPage();
+  customizeTimetable();
 });
